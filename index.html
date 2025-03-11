@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Anatolii, cv, resume">
     <meta name="description" content="Это сайт - резюме Анатолия Бобкова">
+    <link rel="stylesheet" href="styles.css">
     <title>Bobkov Anatolii resume</title>
 </head>
 <body>
-  
-  <img src="avatar.jpg" width="150" alt="Анатолий Бобков">
 
+  <div class="conteiner">
+
+  <div class="info">
+  <img src="avatar.jpg" alt="Анатолий Бобков" class="avatar">
+
+  <div class="info-text">
     <h1>Бобков Анатолий Михайлович</h1>
 
     <p>Я технический директор в строительной компании <strong>АО "КЖБМК"</strong> и студент школы програмирования <strong>Result School</strong> </p>
 
     <p>Изучение програмирования для меня <strong><em>новый этап в жизни.</em></strong> Мне это очень интересно. Я считаю это перспективным направлением</p>
 
-    <p>У меня есть любима девочка, её зовут Екатерина.<strong> Она самая красивая на всей Планете!!!</strong></p>
 
     <h4>Мои любимые сайты:</h4>
 
@@ -26,69 +30,79 @@
     <a href="https://www.drom.ru" target="_blank">Drom</a>
     |
     <a href="https://re-store.ru" target="_blank">RE store</a>
-    
-<h2> Мои хобби</h2>
+  </div>
+  </div>
+  
+<div class="card bg-yellow">  
+  <h2> Мои хобби</h2>
 
-<ol>
-  <li>Путешествия</li>
-  <li>Плавание</li>
-  <li>Рисование</li>
-  <li>Автомобили</li>
-</ol>
+  <ol class="list">
+    <li>Путешествия</li>
+    <li>Плавание</li>
+    <li>Рисование</li>
+    <li>Автомобили</li>
+  </ol>
+  </div>  
 
-  <h2> Опыт работы</h2>
+  <div class="card bg-aqua">
+    <h2> Опыт работы</h2>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>АО "КВАРТ"</td>
-        <td>Начальник производства</td>
-        <td>2019-2021</td>
-      </tr>
-      <tr>
-        <td>ТД "Карелия Бетон"</td>
-        <td>Технический директор</td>
-        <td>2021-2023</td>
-      </tr>
-      <tr>
-        <td>АО "КЖБМК"</td>
-        <td>Технический директор</td>
-        <td>2023-сейчас</td>
-      </tr>
-    </tbody>
-  </table>
+    <table class="table">
+      <!--<thead>
+        <tr>
+          <th>Название</th>
+          <th>Должность</th>
+          <th>Год</th>
+        </tr>
+      </thead>-->
+      <tbody>
+        <tr>
+          <td>АО "КВАРТ"</td>
+          <td>Начальник производства</td>
+          <td>2019-2021</td>
+        </tr>
+        <tr>
+          <td>ТД "Карелия Бетон"</td>
+          <td>Технический директор</td>
+          <td>2021-2023</td>
+        </tr>
+        <tr>
+          <td>АО "КЖБМК"</td>
+          <td>Технический директор</td>
+          <td>2023-сейчас</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<h2>Связаться со мной</h2>
 
-<form action="/">
-  <div>
+
+<form action="/" class="form">
+  <h2>Связаться со мной</h2>
+
+<div class="form-row">
+
+  <div class="form-group">
     <label for="name">Ваше имя:</label>
     <input type="text" id="name" placeholder="Введите имя">
   </div>
 
-  <div>
+  <div class="form-group">
     <label for="email">Ваше email</label>
     <input type="email" id="email" placeholder="Введите email">
 
   </div>
-
-  <div>
+</div>
+  <div class="form-group">
     <label for="message">Ваше сообщение:</label>
     <br>
    <textarea id="message" cols="20" rows="3" placeholder="Введите ваше собщение..."></textarea>
   </div>
 
-  <input type="submit" value="Отправить!">
+  <input class="btn" type="submit" value="Отправить!">
 
   
 </form>
-    
+</div>
   </body>
 </html> 
